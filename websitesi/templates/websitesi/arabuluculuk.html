@@ -1,0 +1,111 @@
+{% extends 'websitesi/components/layout.html' %}
+{% load static %}
+
+{% block metatags %}
+<title>CYH Hukuk | Arabuluculuk</title>
+<meta name="description" content="Avukat Arabulucu Ceren Yılmaz Hyung'un Arabuluculuk Alanındaki Hizmetlerini Anlatan Tanıtıcı Yazıdır.">
+{% endblock %}
+
+
+{% block body %}
+
+
+<!-- start page-title -->
+<section class="page-title">
+<div class="container">
+  <div class="row">
+      <div class="col col-xs-12">
+          <div class="title">
+              <h2>Arabuluculuk</h2>
+          </div>
+      </div>
+  </div> <!-- end row -->
+  <ol class="breadcrumb">
+      <li><a href="{% url 'anasayfa' %}">Ana Sayfa</a></li>
+      <li><a href="{% url 'arabuluculuk' %}">Arabuluculuk</a></li>
+  </ol>
+</div> <!-- end container -->
+</section>
+<!-- end page-title -->
+
+
+<!-- start service-single-section -->
+<section class="service-single-section section-padding">
+<div class="container">
+  <div class="row">
+      <div class="col col-md-8 col-md-push-4">
+          <div class="service-single-content">
+              <div class="service-pic">
+                  <img src="{% static 'websitesi/images/cyh-hukuk-arabuluculuk.png' %}" alt="CYH Hukuk Arabuluculuk">
+              </div>
+              <h2>Arabuluculuk</h2>
+              <p>CYK Hukuk Arabuluculuk olarak sizlere arabuluculuk hakkında merak edilen tüm detayları paylaşarak Avukat arabulucu Ceren Yılmaz Hyung tarafından paylaşılan bilgi ve yönlendirmeler dahilinde sıkça merak edilen sorulara yanıt verecek ve aynı zamanda arabuluculuğun ne olduğunu açıklamaya çalışacağız.</p>
+              <h3>Arabuluculuk Nedir ?</h3>
+
+              <p>Arabuluculuk, sistematik teknikler dahilinde görüşme ve müzakereler gerçekleştirmek amacıyla tarafların bir araya getirilmesi ve tarafların karşılıklı olarak birbirlerini anlaması ve çözümü kendi aralarında sağlamalarını sağlayacak iletişim sürecinin sağlanmasını gerçekleştirmeyi amaçlayan ilgili alanda uzmanlık eğitimi almış, tarafsız ve bağımsız bir üçüncü kişi katılımıyla gerçekleştirilen, ihtiyari olarak yürütülen uyuşmazlık çözüm yollarından birisidir.</p>
+              <p>Arabulucu ise Adalet Bakanlığı Arabuluculuk Daire Başkanlığı tarafından tutulan sicil kaydı dahilinde sistematik teknikler uygulayabilen, görüşme ve müzakerelerde bulunan ve tarafların bir araya getirilmesine katkı sağlayan, tarafların birbirlerini anlamalarını sağlayan tarafsız bir üçüncü kişidir. Arabulucu ilgili alanda uzmanlaşmak için 5 yıllık kıdeme sahip bir hukuk fakültesi mezunu olmalıdır. CYK Hukuk Arabuluculuk bünyesinde sizlere profesyonel çerçevede hizmet veren Avukat Arabulucu Ceren Yılmaz Hyung, arabuluculuk konusunda uzmanlık eğitimini tamamlayarak ilgili sicil kaydını tamamlamış ve Kore Üniversitesi’nde yüksek lisans gerçekleştirmiş aynı zamanda Nişantaşı Üniversitesi’nde öğretim görevlisi olarak görev almaktadır.</p>
+
+              <h3>Arabuluculuk Şartları Nelerdir ?</h3>
+
+              <p>Türkiye’de en az beş yıllık mesleki deneyime sahip hukuk fakültesi mezunları arabuluculuk hizmeti verebilir. Adalet Bakanlığı tarafından tutulan sicil kayıtları dahilinde arabulucu olabilmek için bakanlık tarafından lisanslanan eğitim kurumlarında teorik ve pratik eğitim kapsamında minimum 48 saat eğitim alınması gerekmektedir.</p>
+              <p>İlgili eğitimin tamamlanması ardından Bakanlık tarafından açılan yazılı ve uygulamalı sınavdan başarılı bir şekilde geçmeyi başaran kişiler Adalet Bakanlığı tarafından tutulan sicile kayıt olabilir ve arabulucu unvanına sahip olabilir. Ayrıca arabulucular her yıl 8 saatlik yenileme eğitimine katılmak zorundadır.</p>
+
+              <h3>Arabuluculuğun Avantajları Nelerdir ?</h3>
+              <p>Avukat arabulucu Ceren Yılmaz Hyung, arabuluculuğun dava süreçleri ile karşılaştırıldığında birçok avantajı olduğunu vurgulayarak gerek dünya gerekse ülkemizde her geçen gün daha popüler bir hale gelmeye başladığını dile getiriyor.</p>
+
+              <h4>1) Temelinde Dostane Bir Çözüm Süreci Vardır</h4>
+              <p>Taraflar arasındaki mevcut ilişkilerin korunmasını sağlamak adına arabuluculuk temelinde dostane bir çözüm yöntemi olarak karşımıza çıkmaktadır. Arabuluculuk dahilinde taraflar arasındaki iletişim devam ettirilerek en uygun çözüm yolu ortak bir karar dahilinde alınma olasılığı yüksektir.</p>
+              <h4>2) Çözüme Kısa Yoldan Ulaşılır</h4>
+              <p>Arabuluculuğun en önemli artılarından birisi ise çözüm sürecini çok daha hızlı bir şekilde sonuçlandırmasıdır. Dava yoluna gidilen konularda en erken 8 aylık bir süreçte sonuca varılabildiği gözlemlenirken arabuluculuk dahilinde ilgili çözüm süreci birkaç saat veyahut bir haftalık bir süre içerisinde tamamlanabilmektedir.</p>
+              <h4>3) Bütçe Dostu</h4>
+              <p>Dava süreci dahilinde gerçekleştirilmesi gereken avukatlık vb. ücretlerin bu süreç içerisinde yer almıyor olması ve çözüme kısa yoldan makul bir şekilde ulaşılması yaşanacak gecikme ve masrafların önüne geçmektedir.</p>
+              <h4>4) Gizlilik Dahilinde Gerçekleşir</h4>
+              <p>Arabuluculuk dahilinde ileri sürülen tüm görüş, belge, teklif ve ikrarlar tamamen gizli kalır. Bu nedenle süreç içerisinde yer alan taraflar hiçbir çekince yaşamadan tüm konuları masaya rahatlıkla yatırabilmektedir. Kamuoyuna yansımasından çekinilen konularda arabuluculuğa başvurulabilir.</p>
+              <h4>5) Süreç Tarafların Elindedir</h4>
+              <p>Arabuluculuk dahilinde işleyen süreç tamamen tarafların kontrolünde gerçekleştirilir. Taraflardan bir tanesi ilgili arabuluculuktan dilediği zaman vazgeçmekte özgürdür. Hiçbir taraf istemediği bir anlaşmayı yapmaya zorlanamaz.</p>
+
+              <h3>Arabuluculuk Ücreti</h3>
+              <p>Arabuluculuk hizmeti dahilinde taraflar arabulucuya ödenmesi gereken ücret ve tüm masrafları eşit olarak bölüşecektir. İlgili uyuşmazlığın parayla ölçülebilmesi halinde taraflar arabulucuya ilgili değerin %6’sı kadar ücret ödemesi gerçekleştirir. Ücret tarifesi dahilinde uyuşmazlığa konu olan miktarda artış gözlemlenmesi halinde ilgili oranda düşüş yaşanacaktır. Para ile ölçülemeyecek uyuşmazlıklarda ise arabulucuya ödenecek ücret saatlik olarak hesaplanır ve taraf sayısına bağlı olarak ilgili ücret 95 ila 240 Türk Lirası arasında değişiklik gösterecektir. Arabulucu ile ilgili tarifenin altında bir ücret sözleşmesi gerçekleştirilemez</p>
+
+
+              <br>
+
+          </div>
+      </div>
+      <div class="col col-md-4 col-md-pull-8">
+          <div class="service-sidebar">
+              <div class="widget service-list-widget">
+                  <h3>Uzmanlık Alanları</h3>
+                  <ul>
+                    <li class="current"><a href="{% url 'arabuluculuk' %}">Arabuluculuk</a></li>
+                    <li><a href="{% url 'ishukuku' %}">İş ve Sosyal Güvenlik Hukuku</a></li>
+                    <li><a href="{% url 'cezahukuku' %}">Ceza Hukuku</a></li>
+                    <li><a href="{% url 'ticarethukuku' %}">Ticaret Hukuku</a></li>
+                    <li><a href="{% url 'ailehukuku' %}">Aile Hukuku</a></li>
+                    <li><a href="{% url 'icrahukuku' %}">İcra ve İflas Hukuku</a></li>
+                    <li><a href="{% url 'fikrimulkiyethukuku' %}">Fikri Mülkiyet Hukuku</a></li>
+                    <li><a href="{% url 'sozlesmelerhukuku' %}">Sözleşmeler Hukuku</a></li>
+                    <li><a href="{% url 'idarehukuku' %}">İdare Hukuku</a></li>
+                    <li><a href="{% url 'yabancilarhukuku' %}">Yabancılar Hukuku</a></li>
+                    <li><a href="{% url 'mirashukuku' %}">Miras Hukuku</a></li>
+                    <li><a href="{% url 'tuketicihukuku' %}">Tüketici Hukuku</a></li>
+                  </ul>
+              </div>
+              <div class="widget service-list-widget">
+                  <h3>Son Hukuki Yayınlarımız</h3>
+                  <ul>
+
+                    {% for makale in besmakale %}
+                      <li><a href="{% url 'makaledetay' makaleslug=makale.makale_slug %}">{{ makale.makale_baslik }}</a></li>
+                    {% endfor %}
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> <!-- end container -->
+</section>
+<!-- end service-single-section -->
+
+{% endblock %}

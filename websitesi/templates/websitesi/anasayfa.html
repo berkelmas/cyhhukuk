@@ -1,0 +1,195 @@
+{% extends 'websitesi/components/layout.html' %}
+{% load static %}
+
+{% block metatags %}
+<title>CYH Hukuk | Arabuluculuk</title>
+<meta name="description" content="Avukat Arabulucu Ceren Yılmaz Hyung tarafından kurulan CYH Hukuk ve Arabuluculuk Bürosunun İnternet Sitesidir.">
+{% endblock %}
+
+    {% block body %}
+        <!-- start of hero -->
+        <section class="hero hero-slider-wrapper hero-style-1">
+            <div class="hero-slider">
+                <div class="slide">
+                    <img src="{% static 'websitesi/images/cyh-hukuk-slayt11.png' %}" alt="CYH Hukuk ve Arabuluculuk Bürosu Slayt" class="slider-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-lg-7 slide-caption">
+                                <p style="color : #c1b696">CYH Hukuk & Arabuluculuk</p>
+                                <h2><span>Başarılı & Etkili</span> <span>Hukuki Danışmanlık</span></h2>
+                                <div class="btns">
+                                    <a href="{% url 'hakkimizda' %}" class="theme-btn-s2"> Ceren Yılmaz Hyung Kimdir? </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="{% static 'websitesi/images/cyh-hukuk-slide-2.png' %}" alt="CYH Hukuk & Arabuluculuk Slayt" class="slider-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-lg-7 slide-caption">
+                                <p>Av. Arabulucu Ceren Yılmaz Hyung</p>
+                                <h2>Etkili Hukuki Çözümler İle Tanışın</h2>
+                                <div class="btns">
+                                    <a href="{% url 'uzmanliklar' %}" class="theme-btn-s2"> Daha Fazlası </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of hero slider -->
+
+        <!-- start about-section -->
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-5">
+                        <div class="about-title">
+                            <div class="img-holder">
+                                <img src="{% static 'websitesi/images/cyh-hukuk-anasayfa-1.png' %}" alt="CYH Hukuk & Danışmanlık">
+                            </div>
+                            <div class="title-text">
+                                <h2>Hukuk & <br> Arabuluculuk</h2>
+                                <p>Müvekkillerimize En İyisi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-7">
+                        <div class="about-text">
+                            <h4>CYH Hukuk & Arabuluculuk ile Hukuki Süreçlerinize Çözüm Üretmek İçin Burada</h4>
+                            <p>CYK Hukuk Arabuluculuk olarak kurulmuş olduğumuz ilk günden buyana başta Avukat Ceren Yılmaz Hyung olmak üzere tüm ekip arkadaşlarımızla birlikte hukukun üstünlüğünü benimseyerek profesyonel hizmetler sunmaktayız. Tüm hukuki konularda müvekkillerimizi en iyi şekilde temsil ederek içinde bulundukları bu süreci en kısa sürede atlatmaları için çalışmalar yürütmekteyiz.</p>
+                            <p>Avukat Arabulucu Ceren Ylmaz HYung tarafından İstanbul/Levent merkezli CYH Hukuk & Arabulucuk hizmetleri müvekkillerine gerek arabuluculuk gerek hukuki danışmanlık alanlarında hizmet vermektedir.</p>
+                            <a href="{% url 'hakkimizda' %}" class="theme-btn-s2">Daha Fazlası</a>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end about-section -->
+
+
+        <!-- start services-section -->
+        <section class="services-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="section-title">
+                            <span>Hukukta Uzman</span>
+                            <h2>Uzmanlık Alanlarımız</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="service-grids service-slider">
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-thief-2"></i>
+                                </div>
+                                <h4><a href="{% url 'cezahukuku' %}">Ceza Hukuku</a></h4>
+                                <p>CYH Hukuk & Arabuluculuk, Ceza Hukukunda kalifiye ekibi ile İstanbul bölgesi başta olmak üzere yurtiçi ve yurtdışında müvekkillerine hizmet vermektedir.</p>
+                            </div>
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-parents"></i>
+                                </div>
+                                <h4><a href="{% url 'ailehukuku' %}">Aile Hukuku</a></h4>
+                                <p>Ceren Yılmaz Hyung tarafından kurulan CYH Hukuk, Aile Hukuku boşanma, nafaka vb. aile hukukunu ilgilendiren davalarda başarı ile müvekkillerini temsil etmektedir.</p>
+                            </div>
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-thief-1"></i>
+                                </div>
+                                <h4><a href="{% url 'icrahukuku' %}">İcra ve İflas Hukuku</a></h4>
+                                <p>Ceren Yılmaz Hyung, CYH Hukuk & Arabuluculuk ile müvekkillerinin icra takipleri ve buna ilişkin uyuşmazlıklarda hukuki destek sağlamaktadır.</p>
+                            </div>
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-briefcase"></i>
+                                </div>
+                                <h4><a href="{% url 'ishukuku' %}">İş ve Sosyal Güvenlik Hukuku</a></h4>
+                                <p>CYH Hukuk, gerek işçi gerek işveren vekili olarak iş hukuku davalarında müvekkillerini tecrübeli ekibi ile temsil etmektedir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end services-section -->
+
+
+
+
+
+       <!--  start recent-blog-section -->
+       <section class="recent-blog-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="section-title-s2">
+                            <span>Yayınlar</span>
+                            <h2>Hukuki Makalelerimiz </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="blog-grids clearfix">
+
+
+
+                          {% for makale in ucmakale %}
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="{% static 'websitesi/images/cyh-hukuki-yayin-resim.png' %}" alt="CYH Hukuk & Danışmanlık Yayınları">
+                                </div>
+                                <div class="date">
+                                    <p>{{makale.makale_yayintarihi}}</p>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="{% url 'makaledetay' makaleslug=makale.makale_slug%}">{{makale.makale_baslik}}</a></h3>
+                                    <div class="meta">
+                                        <ul>
+                                          <li>{{ makale.get_makale_kategori_display }}</li>
+                                            <li>-Av Arb. &nbsp;<a href="{% url 'hakkimizda' %}">Ceren Yılmaz Hyung</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+       </section>
+       <!-- end recent-blog-section -->
+
+
+
+        <!-- start cta-section -->
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8">
+                        <div class="cta-text">
+                            <h2>CYH Hukuk & Arabuluculuk Hukuki Sorunlarınızda Yardımcı Olmak İçin Hazır</h2>
+                            <p>Avukat Arabulucu Ceren Yılmaz Hyung tarafından İstanbul Merkezli Levent'te kurulan CYH Hukuk & Arabuluculuk; her türlü avukatlık ve arabulucluk ihtiyaçlarınız için burada.</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <p><a style="color: inherit; text-decoration: none" href="tel:+903123416000">0 (212) 345 67 89</a></p>
+                        <p><a style="color: inherit; text-decoration: none" href="mailto:info@cyhhukuk.com">info@cyhhukuk.com</a></p>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end cta-section -->
+
+        <br><br><br>
+      {% endblock %}
