@@ -6,7 +6,37 @@
 <meta name="description" content="Avukat Arabulucu Ceren Yılmaz Hyung'a için ulaşmak için gerekli formun bulunduğu sayfadır.">
 {% endblock %}
 
+{% block styles %}
+{{block.super}}
 
+<style>
+   @media screen and (min-width: 585px) {
+      .nefimage {
+        margin-left : 35px;
+        margin-top: 10px;
+      }
+    }
+
+    @media screen and (min-width: 585px) {
+       .mapframe {
+        border:0;
+        width: 600px;
+        height: 500px;
+        margin-top: 50px
+       }
+     }
+
+     @media screen and (max-width: 585px) {
+        .mapframe {
+         border:0;
+         width: 350px;
+         height: 350px;
+         margin-top: 50px
+        }
+      }
+</style>
+
+{% endblock %}
 
 {% block body %}
 
@@ -72,11 +102,14 @@
                             <div class="info-box">
                                 <div class="grid">
                                     <h3>Adres</h3>
-                                    <p>Sanayi Mh., Lalegül Sokağı No:10, 34400 <br> Nef Offices Dörtlevent 09</p>
+                                    <p>İletişim Adresim:Sultan Selim Mah.,Lalegül Sok No:10 Nef 09 A Blok Kat:1 Daire:2
+                                      Kağıthane/İSTANBUL</p>
                                 </div>
                                 <div class="grid">
-                                    <h3>Telefon</h3>
-                                    <p><a style="color: inherit; text-decoration: none" href="tel:+903123416000">0 (212) 345 67 89</a></p>
+                                    <h3>İletişim</h3>
+                                    <p>Telefon: </p><p><a style="color: inherit; text-decoration: none" href="tel:+902128126757">0 (212) 812 67 57</a></p>
+                                    <p>Fax: </p><p><a style="color: inherit; text-decoration: none" href="tel:+902128126057">0 (212) 812 60 57</a></p>
+
                                 </div>
                                 <div class="grid">
                                     <h3>Email</h3>
@@ -96,10 +129,12 @@
                 </div>
 
                 <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="contact-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3006.945858421405!2d29.003623962402344!3d41.0920295715332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab67cff6ccabf%3A0xbb1e0b613c4bbd63!2sNef+Offices+D%C3%B6rtlevent+09!5e0!3m2!1sen!2str!4v1556695532352!5m2!1sen!2str" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+                    <div class="col col-lg-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3006.945858421405!2d29.003623962402344!3d41.0920295715332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab67cff6ccabf%3A0xbb1e0b613c4bbd63!2sNef+Offices+D%C3%B6rtlevent+09!5e0!3m2!1sen!2str!4v1556695532352!5m2!1sen!2str" frameborder="0" class="mapframe" allowfullscreen></iframe>
+                    </div>
+                    <br> <br>
+                    <div class="col col-lg-6">
+                      <img class="nefimage"  src="{%static 'websitesi/images/neflevent.jpg'%}" alt="">
                     </div>
                 </div>
             </div> <!-- end container -->
