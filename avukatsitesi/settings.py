@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x=^p6$(yf*i95j_5l&fx^r(73wkuf&e2e1y#fx72+09$e(pnf#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['134.209.255.218', 'cyhhukuk.com', 'www.cyhhukuk.com']
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'avukatsitesi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cyhhukukdatabase',
+        'USER': 'cyhhukukdatabaseuser',
+        'PASSWORD': 'berk693693693',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
